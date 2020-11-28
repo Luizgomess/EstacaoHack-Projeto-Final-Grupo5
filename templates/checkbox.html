@@ -1,0 +1,54 @@
+<label class="input-group">remember-me
+  <input type="checkbox" checked="checked">
+  <span class="checkmark"></span>
+</label>
+
+<style>
+  
+.input-group {
+  position: relative;
+  text-align: center;
+  margin: 15px 0;
+}
+
+.input-group input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 80px;
+  height: 15px;
+  width: 15px;
+  border: 2px solid var(--dark-brown);
+  border-radius: 5px;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.input-group input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.input-group .checkmark:after {
+  left: 1px;
+  top: 0;
+  left: 2px;
+  width: 3px;
+  height: 7px;
+  border: solid var(--dark-brown);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+</style>

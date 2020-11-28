@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@400;700&display=swap');
+
+:root {
+  --blue: #1e90ff;
+  --white: #fafafa;
+  --brown: #6d421c;
+  --dark-brown: #704c2c;
+  --black: #0c0c0c;
+  --font-dancing: 'Dancing Script', cursive;
+  --font-lato: 'Lato', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.modal-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white);
+}
+
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('/images/close-btn.png') no-repeat center;
+  width: 20px;
+  height: 20px;
+  margin: 20px 20px 0 0;
+}
+
+.close-btn:hover {
+  cursor: pointer;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+}
+
+.modal-content h3 {
+  font-family: var(--font-dancing);
+  color: var(--black);
+  font-size: 36px;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+}
+
+.modal-content form .input-outer {
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 60px;
+  border: 3px solid var(--dark-brown);
+  border-radius: 50px;
+}
+
+.modal-content form .input-outer:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+
+.input-icon {
+  margin-left: 20px;
+  width: 25px;
+  height: 25px;
+}
+
+.email-icon {
+  background: url('/images/email-icon.png') no-repeat center;
+}
+
+.password-icon {
+  background: url('/images/password-icon.png') no-repeat center;
+}
+
+.modal-content form input[type='text'],
+.modal-content form input[type='password'] {
+  margin-left: 5px;
+  width: 80%;
+  height: 50%;
+  border: none;
+}
+
+.input-group {
+  position: relative;
+  text-align: center;
+  margin: 15px 0;
+  color: var(--dark-brown);
+}
+
+.input-group input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 80px;
+  height: 15px;
+  width: 15px;
+  border: 2px solid var(--dark-brown);
+  border-radius: 5px;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.input-group input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.input-group .checkmark:after {
+  left: 1px;
+  top: 0;
+  left: 2px;
+  width: 3px;
+  height: 7px;
+  border: solid var(--dark-brown);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: none;
+  background-color: rgba(235, 147, 129, 0.4);
+  box-shadow: inset 1px -3px 3px 0 rgba(0, 0, 0, 0.25);
+  font-family: var(--font-dancing);
+  font-size: 18px;
+}
+
+.separator {
+  margin: 30px 0;
+  width: 270px;
+  height: 60px;
+  background: url('/images/separator.png') no-repeat center;
+}
+
+.forgot-link {
+  font-family: var(--font-lato);
+  font-size: 14px;
+  color: rgba(60, 58, 58, 0.75);
+  text-decoration: none;
+}
+
+.forgot-link span {
+  color: #3C3A3A;
+  font-weight: 600;
+}
+
+.register-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.register-link a {
+  color: #3C3A3A;
+  text-decoration: none;
+}
+
+.arrow-image {
+  background: url('/images/arrow.png') no-repeat center;
+  width: 15px;
+  height: 15px;
+  margin-left: 15px;
+  margin-top: 2px;
+}
