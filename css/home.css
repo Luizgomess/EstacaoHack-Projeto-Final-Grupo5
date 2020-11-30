@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-container {
+    background-image: url('../images/background-mobile.png');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.home-itens {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-itens .img-container {
+   align-self: center;
+}
+
+.home-itens .img-container img {
+    width: 250px;
+ }
+
+ .home-itens h1 {
+    position: relative;
+    top: 50px;
+    font-family: 'Dancing Script', cursive;
+    color: #704C2C;
+}
+
+.home-itens button {
+    align-self: center;
+    position: relative;
+    top: 150px;
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background-color: #e2a89c;
+    font-size: 15pt;
+    font-family: 'Dancing Script', cursive;
+    box-shadow: inset 2px -3px 3px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+}
+
+@media (min-width: 1024px) {
+    .home-container {
+        background-image: url('../images/background.png');
+        background-size: 100% 100%;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .home-itens {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .home-itens .img-container {
+        position: relative;
+        top: 100px;
+        left: 100px;
+        align-self: flex-start;
+    }
+
+    .home-itens .img-container img {
+        width: 300px;
+     }
+    
+    .home-itens h1 {
+        position: relative;
+        top: 150px;
+        right: 100px;
+        font-family: 'Dancing Script', cursive;
+        color: #704C2C;
+        font-size: 30pt;
+    }
+    
+    .home-itens button {
+        align-self: flex-end;
+        position: relative;
+        top: 200px;
+        left: 50px;
+        align-self: center;
+        width: 300px;
+        height: 70px;
+        border-radius: 35px;
+        border: none;
+        outline: none;
+        background-color: #E3C5C1;
+        font-size: 20pt;
+        font-family: 'Dancing Script', cursive;
+        box-shadow: inset 2px -3px 3px rgba(0, 0, 0, 0.25);
+        filter: drop-shadow(-4px 6px 4px rgba(0, 0, 0, 0.25));
+        cursor: pointer;
+    }
+}
+
+/*
+*/
