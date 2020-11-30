@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+h1{
+    font-family: 'Dancing Script', cursive;
+    margin-top: 20%;
+    margin-bottom: 30%;
+}
+
+.container{
+    display: block;
+    text-align: center;
+    margin-top: 20%;
+}
+
+#register-form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.input-container{
+    display: flex;
+    border: 2px solid #704c2c;
+    border-radius: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.input-icon{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.input-field{
+    width: 100%;
+    margin: 10px;
+    outline: none;
+    border: none;
+}
+
+.newsletter-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+.checkbox-input {
+    border: 1px solid #704c2c;
+}
+    
+.checklabel {
+    color: #704c2c;
+    font-size: 15px;
+    margin-left: 7px;
+}
+
+/* Button style */
+.btn {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(235, 147, 129, 0.4);
+    box-shadow: inset 1px -3px 3px 0 rgba(0, 0, 0, 0.25);
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      display: block;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.25);
+      height: 100vh;
+      width: 100%;
+    }
+}
