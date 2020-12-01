@@ -94,7 +94,7 @@
     .home-itens button {
         align-self: flex-end;
         position: relative;
-        top: 200px;
+        top: 250px;
         left: 50px;
         align-self: center;
         width: 300px;
@@ -110,6 +110,3 @@
         cursor: pointer;
     }
 }
-
-/*
-*/

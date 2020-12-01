@@ -141,7 +141,7 @@
   transform: rotate(45deg);
 }
 
-.btn {
+.submit-btn {
   width: 100px;
   height: 40px;
   margin: 0 auto;
@@ -153,8 +153,10 @@
   font-size: 18px;
 }
 
-.btn:hover {
+.submit-btn:hover {
   cursor: pointer;
+  transform: translateY(2px);
+  background-color: rgba(235, 147, 129, 0.75);
 }
 
 .separator {
