@@ -3,47 +3,48 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, intitial-scale=1.0">
-        <link rel="stylesheet" href="css/registerStyle.css" />
+        <link rel="stylesheet" href="css/register.css" />
         <title>Register</title>
-
-        <!--Fonts -->
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
-            <h1>Register</h1>
-            <form id="register-form" action="" method="post">
-                <!-- user name -->
-                <div class="input-container">
-                    <img class="input-icon" src="images/email-icon.png" />
-                    <input class="input-field" type="text" placeholder="Full Name">
+            <div class="modal-container">
+                <div class="close-btn"></div>
+                <div class="modal-content">
+                    <h1>Register</h1>
+                    <form id="register-form" action="" method="post">
+                        <!-- user name -->
+                        <div class="input-container">
+                            <img class="input-icon" src="images/user-icon.png" />
+                            <input class="input-field" type="text" placeholder="Full Name">
+                        </div>
+                        <!-- user email-->
+                        <div class="input-container">
+                            <img class="input-icon" src="images/email-icon.png" />
+                            <input class="input-field" type="email" placeholder="Email">
+                        </div>
+                        <!-- user password -->
+                        <div class="input-container">
+                            <img class="input-icon" src="images/password-icon.png" />
+                            <input class="input-field" type="password" placeholder="Password">
+                        </div>
+                        <!-- user confirm-password -->
+                        <div class="input-container">
+                            <img class="input-icon" src="images/password-icon.png" />
+                            <input class="input-field" type="password" placeholder="Confirm Password">
+                        </div>
+                        <!-- newsletter -->          
+                        <label class="input-group">sign in to newsletter
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>        
+                        <!-- register button  -->
+                        <div class="newsletter-container">
+                            <button class="btn" type="submit">Submit</button>
+                        </div>
+                    </form>
                 </div>
-                <!-- user email-->
-                <div class="input-container">
-                    <img class="input-icon" src="images/email-icon.png" />
-                    <input class="input-field" type="email" placeholder="Email">
-                </div>
-                <!-- user password -->
-                <div class="input-container">
-                    <img class="input-icon" src="images/email-icon.png" />
-                    <input class="input-field" type="password" placeholder="Password">
-                </div>
-                <!-- user confirm-password -->
-                <div class="input-container">
-                    <img class="input-icon" src="images/email-icon.png" />
-                    <input class="input-field" type="password" placeholder="Confirm Password">
-                </div>
-                <!-- newsletter -->
-                <div class="newsletter-container">
-                    <input type="checkbox" class="checkbox-input" checked="checked">
-                    <p class="checklabel">sign in to newsletter</p>
-                </div>
-                <!-- register button  -->
-                <div class="newsletter-container">
-                    <button class="btn" type="submit">Submit</button>
-                </div>
-            </form>
+            </div>
         </div>
     </body>
 

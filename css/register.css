@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@400;700&display=swap');
+:root {
+    --blue: #1e90ff;
+    --white: #fafafa;
+    --brown: #6d421c;
+    --dark-brown: #704c2c;
+    --black: #0c0c0c;
+    --font-dancing: 'Dancing Script', cursive;
+    --font-lato: 'Lato', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modal-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--white);
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('/images/close-btn.png') no-repeat center;
+    width: 20px;
+    height: 20px;
+    margin: 20px 20px 0 0;
+}
+
+.close-btn:hover {
+    cursor: pointer;
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+}
+
+h1{
+    font-family: var(--font-dancing);
+    color: var(--black);
+    font-size: 36px;
+}
+
+.modal-content form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+}
+
+#register-form{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.input-container{
+    display: flex;
+    align-items: center;
+    border: 3px solid var(--dark-brown);
+    border-radius: 50px;
+    width: 100%;
+    margin-bottom: 10px;
+    min-width: 300px;
+    min-height: 60px;
+}
+
+.input-icon{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.input-field{
+    width: 100%;
+    margin: 10px;
+    outline: none;
+    border: none;
+}
+
+.newsletter-container{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+    
+.checklabel {
+    color: #704c2c;
+    font-size: 15px;
+    margin-left: 7px;
+}
+
+/* Button style */
+.btn {
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 50px;
+    border: none;
+    background-color: rgba(235, 147, 129, 0.4);
+    box-shadow: inset 1px -3px 3px 0 rgba(0, 0, 0, 0.25);
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+  }
+  
+  .btn:hover {
+    cursor: pointer;
+  }
+  /* end of button style */
+
+  .input-group {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    text-align: center;
+    margin: 15px 0;
+    color: var(--dark-brown);
+  }
+  
+  .input-group input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 3px;
+    left: 80px;
+    height: 15px;
+    width: 15px;
+    border: 2px solid var(--dark-brown);
+    border-radius: 5px;
+  }
+  
+  .checkmark:after {
+    content: '';
+    position: absolute;
+    display: none;
+  }
+  
+  .input-group input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .input-group .checkmark:after {
+    left: 1px;
+    top: 0;
+    left: 3px;
+    width: 3px;
+    height: 7px;
+    border: solid var(--dark-brown);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+
+  @media (min-width: 1024px) {
+
+    .container {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(0, 0, 0, 0.25);
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .modal-container {
+        margin: 0;
+        max-width: 810px;
+        max-height: 577px;
+        border-radius: 50px;
+        border-bottom: 5px rgba(233.0, 176.0, 230.0, 1.0) solid;
+        border-right: 5px rgba(233.0, 176.0, 230.0, 1.0) solid;
+    }
+
+    .close-btn {
+        margin: 35px 40px 0 0;
+    }
+    .modal-content h3 {
+        font-size: 52px;
+    }
+    .modal-content form {
+        margin-top: 30px;
+    }
+
+    .modal-content form .input-container {
+        min-width: 380px;
+        border: 3px solid var(--dark-brown);
+        border-radius: 50px;
+    }
+
+    .checkmark {
+        left: 120px;
+      }
+}
