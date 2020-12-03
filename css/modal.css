@@ -47,11 +47,14 @@
   position: absolute;
   top: 0;
   right: 0;
-  background: url("../images/Menu-btn.png") no-repeat center;
+  background: url('../images/Menu-btn.png') no-repeat center;
   width: 30px;
   height: 22px;
   margin-top: 20px;
   margin-right: 20px;
+}
+.menu-btn:hover {
+  cursor: pointer;
 }
 
 .modal-content {
@@ -285,7 +288,7 @@
 }
 
 .nav-mobile {
-  font-family: "Dancing Script", cursive;
+  font-family: 'Dancing Script', cursive;
   margin-left: 60px;
   padding-top: 100px;
 }
@@ -295,14 +298,16 @@
 .nav-mobile a {
   font-size: 36px;
   font-weight: bold;
-  color: #6D421C;
+  color: #6d421c;
   text-decoration: none;
   margin-bottom: 10px;
 }
 .nav-mobile .login-mobile {
   margin-top: 80px;
 }
-
+li a:hover {
+  cursor: pointer;
+}
 @media (min-width: 1024px) {
   .container {
     position: absolute;
@@ -376,7 +381,6 @@
   .newsletter-checkbox .checkmark {
     left: -20px;
   }
-
 
   .separator {
     margin: 10px;
