@@ -63,4 +63,8 @@
   .products-container {
     margin-top: 100px;
   }
+  
+  .products-container .close-btn {
+    display: none;
+  }
 }
