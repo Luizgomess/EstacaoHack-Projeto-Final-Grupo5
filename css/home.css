@@ -39,17 +39,18 @@
     color: #704C2C;
 }
 
-.home-itens button {
+.home-itens .check-products {
     align-self: center;
     position: relative;
     top: 150px;
-    width: 200px;
-    height: 50px;
-    border-radius: 25px;
+    padding: 15px 30px;
+    text-decoration: none;
+    color: black;
+    border-radius: 35px;
     border: none;
     outline: none;
     background-color: #e2a89c;
-    font-size: 15pt;
+    font-size: 1.3em;
     font-family: 'Dancing Script', cursive;
     box-shadow: inset 2px -3px 3px rgba(0, 0, 0, 0.25);
     cursor: pointer;
@@ -91,22 +92,13 @@
         font-size: 30pt;
     }
     
-    .home-itens button {
+    .home-itens .check-products {
         align-self: flex-end;
         position: relative;
         top: 250px;
         left: 50px;
         align-self: center;
-        width: 300px;
-        height: 70px;
-        border-radius: 35px;
-        border: none;
-        outline: none;
-        background-color: #E3C5C1;
         font-size: 20pt;
-        font-family: 'Dancing Script', cursive;
-        box-shadow: inset 2px -3px 3px rgba(0, 0, 0, 0.25);
-        filter: drop-shadow(-4px 6px 4px rgba(0, 0, 0, 0.25));
-        cursor: pointer;
+    
     }
 }
