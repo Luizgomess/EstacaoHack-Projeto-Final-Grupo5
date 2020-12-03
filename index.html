@@ -11,14 +11,7 @@
 
 <body>
 	<section class="home-container">
-		<nav>
-			<a class="home-link">Home</a>
-			<a class="looks-link">Looks</a>
-			<a class="products-link">Products</a>
-			<a class="login-link">Login</a>
-			<a class="contact-link">Contact</a>
-			<a class="newsletter-link">Newsletter</a>
-		</nav>
+		<div class="menu-btn"></div>
 		<div class="home-itens">
 			<div class="img-container">
 				<img src="./images/logo.png" alt="Logo do site">
@@ -27,6 +20,24 @@
 			<a href="carousel.html" class="check-products">Check our Products</a>
 		</div>
 	</section>
+
+	<!-- Menu Mobile -->
+	<div class="container modal" id='menu-modal'>
+		<div class="modal-container">
+			<div class="close-btn"></div>
+			<nav class="nav-mobile">
+				<ul>
+					<li><a class="home-link">Home</a></li>
+					<li><a class="looks-link">Looks</a></li>
+					<li><a class="products-link">Products</a></li>
+					<li class="login-mobile"><a class="login-link">Login / Register</a></li>
+					<li><a class="contact-link">Contact</a></li>
+					<li><a class="newsletter-link">Newsletter</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- END of Menu Mobile -->
 
 	<!-- Login Modal -->
 	<div class="container modal" id="login-modal">
@@ -134,92 +145,41 @@
 				<form action="#">
 					<div class="input-outer align-center">
 						<div class="user-icon input-icon"></div>
-						<input
-							type="text"
-							name="fullname"
-							id="fullname"
-							placeholder="Full Name"
-						/>
+						<input type="text" name="fullname" id="fullname" placeholder="Full Name" />
 					</div>
 					<div class="input-outer align-center">
 						<div class="email-icon input-icon"></div>
-						<input
-							type="email"
-							name="Email"
-							id="email"
-							placeholder="E-mail"
-						/>
+						<input type="email" name="Email" id="email" placeholder="E-mail" />
 					</div>
 					<section id="catchText">
 						<h4>You First</h4>
 						<p>Sign up to get the best deals before anyone else</p>
 					</section>
 
-					<div class="input-options">	
+					<div class="input-options">
 						<label class="input-group newsletter-checkbox" for="clothes">
-							<input
-								type="checkbox"
-								name="clothes"
-								id="clothes"
-								value="clothes"
-							/><span class="checkmark"></span>Clothes</label
-						>
+							<input type="checkbox" name="clothes" id="clothes" value="clothes" /><span
+								class="checkmark"></span>Clothes</label>
 						<label class="input-group newsletter-checkbox" for="shoes">
-							<input
-								type="checkbox"
-								name="shoes"
-								id="shoes"
-								value="shoes"
-							/><span class="checkmark"></span>Shoes</label
-						>
+							<input type="checkbox" name="shoes" id="shoes" value="shoes" /><span
+								class="checkmark"></span>Shoes</label>
 						<label class="input-group newsletter-checkbox" for="jewels">
-							<input
-								type="checkbox"
-								name="jewels"
-								id="jewels"
-								value="jewels"
-							/><span class="checkmark"></span>Jewels</label
-						>
+							<input type="checkbox" name="jewels" id="jewels" value="jewels" /><span
+								class="checkmark"></span>Jewels</label>
 						<label class="input-group newsletter-checkbox" for="makeup">
-							<input
-								type="checkbox"
-								name="makeup"
-								id="makeup"
-								value="makeup"
-							/><span class="checkmark"></span>Makeup</label
-						>
+							<input type="checkbox" name="makeup" id="makeup" value="makeup" /><span
+								class="checkmark"></span>Makeup</label>
 						<label class="input-group newsletter-checkbox" for="purses">
-							<input
-								type="checkbox"
-								name="purses"
-								id="purses"
-								value="purses"
-							/><span class="checkmark"></span>Purses</label
-						>
+							<input type="checkbox" name="purses" id="purses" value="purses" /><span
+								class="checkmark"></span>Purses</label>
 						<label class="input-group newsletter-checkbox" for="bags">
-							<input
-								type="checkbox"
-								name="bags"
-								id="bags"
-								value="bags"
-							/><span class="checkmark"></span>Bags</label
-						>
+							<input type="checkbox" name="bags" id="bags" value="bags" /><span class="checkmark"></span>Bags</label>
 						<label class="input-group newsletter-checkbox" for="fragancies">
-							<input
-								type="checkbox"
-								name="frangancies"
-								id="fragancies"
-								value="frangancies"
-							/><span class="checkmark"></span>Frangancies</label
-						>
+							<input type="checkbox" name="frangancies" id="fragancies" value="frangancies" /><span
+								class="checkmark"></span>Frangancies</label>
 						<label class="input-group newsletter-checkbox" for="sales">
-							<input
-								type="checkbox"
-								name="sales"
-								id="sales"
-								value="sales"
-							/><span class="checkmark"></span>Sales</label
-						>
+							<input type="checkbox" name="sales" id="sales" value="sales" /><span
+								class="checkmark"></span>Sales</label>
 					</div>
 
 					<button class="submit-btn" type="submit">Submit</button>

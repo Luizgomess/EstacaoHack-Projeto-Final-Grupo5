@@ -31,6 +31,11 @@ document.querySelectorAll('.newsletter-link')[0].addEventListener('click', funct
   OpenModal('newsletter-modal', 'flex');
 })
 
+document.querySelectorAll('.menu-btn')[0].addEventListener('click', function () {
+  CloseAllModal();
+  OpenModal('menu-modal', 'flex');
+})
+
 function OpenModal(modalId, displayValue) {
   let modalElement = document.getElementById(modalId);
   modalElement.style.display = displayValue;
