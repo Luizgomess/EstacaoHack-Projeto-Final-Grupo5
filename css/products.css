@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@400;700&display=swap');
+
+:root {
+  --blue: #1e90ff;
+  --white: #fafafa;
+  --brown: #6d421c;
+  --dark-brown: #704c2c;
+  --black: #0c0c0c;
+  --font-dancing: 'Dancing Script', cursive;
+  --font-lato: 'Lato', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.modal-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--white);
+}
+.modal-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  width: auto;
+}
+
+.item{
+  height: 350px;
+  width: 270px;
+  border-radius: 5px ;
+  background-color: #ECECEC;
+  margin: 5px;
+}
+.item #itemPicture{
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 309px ;
+  width: 270px;
+}
+.item h4 {
+  font-family: var(--font-dancing);
+  color: var(--black);
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5px;
+}
+.item h5{
+  font-family: var(--font-dancing);
+  color: var(--black);
+  font-size: 8px;
+  text-align: center;
+  margin-top: 5px;
+}
+.sort-filter{
+  display: flex;
+  align-items: center;
+  justify-content: center  ;
+  width: auto;
+}
+
