@@ -26,13 +26,14 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
   margin: auto;
-  width: 1290px;
+  width: auto;
 }
 
 .item{
-  height: 270px;
-  width: 180px;
+  height: 350px;
+  width: 270px;
   border-radius: 5px ;
   background-color: #ECECEC;
   margin: 5px;
@@ -40,8 +41,8 @@
 .item #itemPicture{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  height: 206px ;
-  width: 180px;
+  height: 309px ;
+  width: 270px;
 }
 .item h4 {
   font-family: var(--font-dancing);
@@ -56,5 +57,11 @@
   font-size: 8px;
   text-align: center;
   margin-top: 5px;
+}
+.sort-filter{
+  display: flex;
+  align-items: center;
+  justify-content: center  ;
+  width: auto;
 }
 
