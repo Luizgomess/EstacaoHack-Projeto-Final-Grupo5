@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="./css/home.css" /> -->
-    <link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/modal.css" />
-		<link rel="stylesheet" href="css/carousel.css" />
-    <title>Beautify - Looks</title>
-  </head>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- <link rel="stylesheet" href="./css/home.css" /> -->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/modal.css" />
+	<link rel="stylesheet" href="css/carousel.css" />
+	<title>Beautify - Looks</title>
+</head>
 
 <body>
 	<nav class="nav-desktop">
@@ -26,7 +27,7 @@
 		<ul>
 			<li><a class="home-link" href="index.html">Home</a></li>
 			<li><a class="looks-link" href="looks.html">Looks</a></li>
-			<li><a class="products-link" href="">Products</a></li>
+			<li><a class="products-link" href="products.html">Products</a></li>
 			<li><a class="login-link">Login</a></li>
 			<li><a class="contact-link">Contact</a></li>
 			<li><a class="newsletter-link">Newsletter</a></li>
@@ -108,263 +109,176 @@
 
 
 
-	
-    <!-- Menu Mobile -->
-    <div class="container modal" id="menu-modal">
-      <div class="modal-container">
-        <div class="close-btn"></div>
-        <nav class="nav-mobile">
-          <ul>
-            <li><a class="home-link">Home</a></li>
-            <li><a class="looks-link" href="looks.html">Looks</a></li>
-            <li><a class="products-link">Products</a></li>
-            <li class="login-mobile">
-              <a class="login-link">Login / Register</a>
-            </li>
-            <li><a class="contact-link">Contact</a></li>
-            <li><a class="newsletter-link">Newsletter</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <!-- END of Menu Mobile -->
 
-    <!-- Login Modal -->
-    <div class="container modal" id="login-modal">
-      <div class="modal-container">
-        <div class="close-btn"></div>
-        <div class="modal-content">
-          <h3>Log in</h3>
-          <form action="#">
-            <div class="input-outer">
-              <div class="email-icon input-icon"></div>
-              <input
-                type="text"
-                name="login-email"
-                id="login-email"
-                placeholder="E-mail"
-              />
-            </div>
-            <div class="input-outer">
-              <div class="password-icon input-icon"></div>
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Password"
-              />
-            </div>
-            <label class="input-group login-checkbox"
-              >remember-me
-              <input type="checkbox" checked="checked" />
-              <span class="checkmark"></span>
-            </label>
-            <button class="submit-btn" type="submit">Submit</button>
-          </form>
-          <div class="separator"></div>
-          <a class="forgot-link" href="#"
-            >Forgot <span>Username / Password?</span></a
-          >
-          <div class="register-link">
-            <a href="#">Create your account</a>
-            <div class="arrow-image"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--END of Login Modal -->
+	<!-- Menu Mobile -->
+	<div class="container modal" id="menu-modal">
+		<div class="modal-container">
+			<div class="close-btn"></div>
+			<nav class="nav-mobile">
+				<ul>
+					<li><a class="home-link">Home</a></li>
+					<li><a class="looks-link" href="looks.html">Looks</a></li>
+					<li><a class="products-link">Products</a></li>
+					<li class="login-mobile">
+						<a class="login-link">Login / Register</a>
+					</li>
+					<li><a class="contact-link">Contact</a></li>
+					<li><a class="newsletter-link">Newsletter</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<!-- END of Menu Mobile -->
 
-    <!-- Register Modal -->
-    <div class="container modal" id="register-modal">
-      <div class="modal-container">
-        <div class="close-btn"></div>
-        <div class="modal-content">
-          <h3>Register</h3>
-          <form id="register-form" action="" method="post">
-            <!-- user name -->
-            <div class="input-outer">
-              <img class="input-icon" src="images/user-icon.png" />
-              <input class="input-field" type="text" placeholder="Full Name" />
-            </div>
-            <!-- user email-->
-            <div class="input-outer">
-              <img class="input-icon" src="images/email-icon.png" />
-              <input class="input-field" type="email" placeholder="Email" />
-            </div>
-            <!-- user password -->
-            <div class="input-outer">
-              <img class="input-icon" src="images/password-icon.png" />
-              <input
-                class="input-field"
-                type="password"
-                placeholder="Password"
-              />
-            </div>
-            <!-- user confirm-password -->
-            <div class="input-outer">
-              <img class="input-icon" src="images/password-icon.png" />
-              <input
-                class="input-field"
-                type="password"
-                placeholder="Confirm Password"
-              />
-            </div>
-            <!-- newsletter -->
-            <!-- <label class="input-group newsletter-checkbox">sign in to newsletter
+	<!-- Login Modal -->
+	<div class="container modal" id="login-modal">
+		<div class="modal-container">
+			<div class="close-btn"></div>
+			<div class="modal-content">
+				<h3>Log in</h3>
+				<form action="#">
+					<div class="input-outer">
+						<div class="email-icon input-icon"></div>
+						<input type="text" name="login-email" id="login-email" placeholder="E-mail" />
+					</div>
+					<div class="input-outer">
+						<div class="password-icon input-icon"></div>
+						<input type="password" name="password" id="password" placeholder="Password" />
+					</div>
+					<label class="input-group login-checkbox">remember-me
+						<input type="checkbox" checked="checked" />
+						<span class="checkmark"></span>
+					</label>
+					<button class="submit-btn" type="submit">Submit</button>
+				</form>
+				<div class="separator"></div>
+				<a class="forgot-link" href="#">Forgot <span>Username / Password?</span></a>
+				<div class="register-link">
+					<a href="#">Create your account</a>
+					<div class="arrow-image"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--END of Login Modal -->
+
+	<!-- Register Modal -->
+	<div class="container modal" id="register-modal">
+		<div class="modal-container">
+			<div class="close-btn"></div>
+			<div class="modal-content">
+				<h3>Register</h3>
+				<form id="register-form" action="" method="post">
+					<!-- user name -->
+					<div class="input-outer">
+						<img class="input-icon" src="images/user-icon.png" />
+						<input class="input-field" type="text" placeholder="Full Name" />
+					</div>
+					<!-- user email-->
+					<div class="input-outer">
+						<img class="input-icon" src="images/email-icon.png" />
+						<input class="input-field" type="email" placeholder="Email" />
+					</div>
+					<!-- user password -->
+					<div class="input-outer">
+						<img class="input-icon" src="images/password-icon.png" />
+						<input class="input-field" type="password" placeholder="Password" />
+					</div>
+					<!-- user confirm-password -->
+					<div class="input-outer">
+						<img class="input-icon" src="images/password-icon.png" />
+						<input class="input-field" type="password" placeholder="Confirm Password" />
+					</div>
+					<!-- newsletter -->
+					<!-- <label class="input-group newsletter-checkbox">sign in to newsletter
 						<input type="checkbox" checked="checked">
 						<span class="checkmark"></span>
 					</label> -->
-            <!-- register button  -->
-            <button class="submit-btn" type="submit">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!--END of Register Modal -->
+					<!-- register button  -->
+					<button class="submit-btn" type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--END of Register Modal -->
 
-    <!-- Contact Modal -->
-    <div class="container modal" id="contact-modal">
-      <div class="modal-container">
-        <div class="close-btn"></div>
-        <div class="modal-content">
-          <h3>Contact Us</h3>
-          <form action="#">
-            <div class="input-outer">
-              <div class="user-icon input-icon"></div>
-              <input
-                type="text"
-                name="user"
-                id="user"
-                placeholder="Full Name"
-              />
-            </div>
-            <div class="input-outer">
-              <div class="email-icon input-icon"></div>
-              <input
-                type="email"
-                name="contact-email"
-                id="contact-email"
-                placeholder="E-mail"
-              />
-            </div>
-            <textarea
-              id="comment"
-              class="comment"
-              placeholder="Message"
-              maxlength="10000"
-            ></textarea>
-            <button class="submit-btn" type="submit">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!--END of Contact Modal -->
+	<!-- Contact Modal -->
+	<div class="container modal" id="contact-modal">
+		<div class="modal-container">
+			<div class="close-btn"></div>
+			<div class="modal-content">
+				<h3>Contact Us</h3>
+				<form action="#">
+					<div class="input-outer">
+						<div class="user-icon input-icon"></div>
+						<input type="text" name="user" id="user" placeholder="Full Name" />
+					</div>
+					<div class="input-outer">
+						<div class="email-icon input-icon"></div>
+						<input type="email" name="contact-email" id="contact-email" placeholder="E-mail" />
+					</div>
+					<textarea id="comment" class="comment" placeholder="Message" maxlength="10000"></textarea>
+					<button class="submit-btn" type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--END of Contact Modal -->
 
-    <!-- Newsletter Modal -->
-    <div class="container modal" id="newsletter-modal">
-      <div class="modal-container newsletter-modal">
-        <div class="close-btn"></div>
-        <div class="modal-content">
-          <main>
-            <img src="./images/newsletter.svg" alt="Newsletter Image" />
-          </main>
-          <form action="#">
-            <div class="input-outer align-center">
-              <div class="user-icon input-icon"></div>
-              <input
-                type="text"
-                name="fullname"
-                id="fullname"
-                placeholder="Full Name"
-              />
-            </div>
-            <div class="input-outer align-center">
-              <div class="email-icon input-icon"></div>
-              <input
-                type="email"
-                name="Email"
-                id="email"
-                placeholder="E-mail"
-              />
-            </div>
-            <section id="catchText">
-              <h4>You First</h4>
-              <p>Sign up to get the best deals before anyone else</p>
-            </section>
+	<!-- Newsletter Modal -->
+	<div class="container modal" id="newsletter-modal">
+		<div class="modal-container newsletter-modal">
+			<div class="close-btn"></div>
+			<div class="modal-content">
+				<main>
+					<img src="./images/newsletter.svg" alt="Newsletter Image" />
+				</main>
+				<form action="#">
+					<div class="input-outer align-center">
+						<div class="user-icon input-icon"></div>
+						<input type="text" name="fullname" id="fullname" placeholder="Full Name" />
+					</div>
+					<div class="input-outer align-center">
+						<div class="email-icon input-icon"></div>
+						<input type="email" name="Email" id="email" placeholder="E-mail" />
+					</div>
+					<section id="catchText">
+						<h4>You First</h4>
+						<p>Sign up to get the best deals before anyone else</p>
+					</section>
 
-            <div class="input-options">
-              <label class="input-group newsletter-checkbox" for="clothes">
-                <input
-                  type="checkbox"
-                  name="clothes"
-                  id="clothes"
-                  value="clothes"
-                /><span class="checkmark"></span>Clothes</label
-              >
-              <label class="input-group newsletter-checkbox" for="shoes">
-                <input
-                  type="checkbox"
-                  name="shoes"
-                  id="shoes"
-                  value="shoes"
-                /><span class="checkmark"></span>Shoes</label
-              >
-              <label class="input-group newsletter-checkbox" for="jewels">
-                <input
-                  type="checkbox"
-                  name="jewels"
-                  id="jewels"
-                  value="jewels"
-                /><span class="checkmark"></span>Jewels</label
-              >
-              <label class="input-group newsletter-checkbox" for="makeup">
-                <input
-                  type="checkbox"
-                  name="makeup"
-                  id="makeup"
-                  value="makeup"
-                /><span class="checkmark"></span>Makeup</label
-              >
-              <label class="input-group newsletter-checkbox" for="purses">
-                <input
-                  type="checkbox"
-                  name="purses"
-                  id="purses"
-                  value="purses"
-                /><span class="checkmark"></span>Purses</label
-              >
-              <label class="input-group newsletter-checkbox" for="bags">
-                <input
-                  type="checkbox"
-                  name="bags"
-                  id="bags"
-                  value="bags"
-                /><span class="checkmark"></span>Bags</label
-              >
-              <label class="input-group newsletter-checkbox" for="fragancies">
-                <input
-                  type="checkbox"
-                  name="frangancies"
-                  id="fragancies"
-                  value="frangancies"
-                /><span class="checkmark"></span>Frangancies</label
-              >
-              <label class="input-group newsletter-checkbox" for="sales">
-                <input
-                  type="checkbox"
-                  name="sales"
-                  id="sales"
-                  value="sales"
-                /><span class="checkmark"></span>Sales</label
-              >
-            </div>
+					<div class="input-options">
+						<label class="input-group newsletter-checkbox" for="clothes">
+							<input type="checkbox" name="clothes" id="clothes" value="clothes" /><span
+								class="checkmark"></span>Clothes</label>
+						<label class="input-group newsletter-checkbox" for="shoes">
+							<input type="checkbox" name="shoes" id="shoes" value="shoes" /><span
+								class="checkmark"></span>Shoes</label>
+						<label class="input-group newsletter-checkbox" for="jewels">
+							<input type="checkbox" name="jewels" id="jewels" value="jewels" /><span
+								class="checkmark"></span>Jewels</label>
+						<label class="input-group newsletter-checkbox" for="makeup">
+							<input type="checkbox" name="makeup" id="makeup" value="makeup" /><span
+								class="checkmark"></span>Makeup</label>
+						<label class="input-group newsletter-checkbox" for="purses">
+							<input type="checkbox" name="purses" id="purses" value="purses" /><span
+								class="checkmark"></span>Purses</label>
+						<label class="input-group newsletter-checkbox" for="bags">
+							<input type="checkbox" name="bags" id="bags" value="bags" /><span class="checkmark"></span>Bags</label>
+						<label class="input-group newsletter-checkbox" for="fragancies">
+							<input type="checkbox" name="frangancies" id="fragancies" value="frangancies" /><span
+								class="checkmark"></span>Frangancies</label>
+						<label class="input-group newsletter-checkbox" for="sales">
+							<input type="checkbox" name="sales" id="sales" value="sales" /><span
+								class="checkmark"></span>Sales</label>
+					</div>
 
-            <button class="submit-btn" type="submit">Submit</button>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!--END of Newsletter Modal -->
+					<button class="submit-btn" type="submit">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!--END of Newsletter Modal -->
 	<script src="./js/script.js"></script>
 	<script src="./js/carousel.js"></script>
 </body>
