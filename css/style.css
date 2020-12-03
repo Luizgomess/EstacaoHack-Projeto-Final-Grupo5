@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@400;700&display=swap');
-@import url("modal.css");
 
 .nav-desktop {
   display: none;
@@ -8,3 +7,89 @@
   display: none;
 }
 
+.social-links-mobile {
+  height: 30px;
+  display: flex;
+}
+.social-links-mobile a {
+  margin-left: 15px;
+}
+
+.twitter-icon {
+  background: url('../images/twitter.png') no-repeat center;
+}
+.facebook-icon {
+  background: url('../images/facebook.png') no-repeat center;
+}
+.instagram-icon {
+  background: url('../images/instagram.png') no-repeat center;
+}
+
+@media (min-width: 1024px) {
+  .home-container .menu-btn {
+    display: none;
+  }
+
+  .nav-desktop {
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    font-family: 'Dancing Script', cursive;
+    justify-content: space-between;
+  }
+
+  .nav-desktop ul {
+    list-style: none;
+    float: right;
+    margin-top: 15px;
+    margin-right: 15px;
+  }
+  
+  .nav-desktop li {
+    display: inline;
+    padding: 15px;
+  }
+
+  .nav-desktop a {
+    font-size: 34px;
+    font-weight: bold;
+    color: #6d421c;
+    text-decoration: none;
+    margin-bottom: 10px;
+  }
+  
+  .twitter-icon {
+    background: url('../images/twitter.png') no-repeat center;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  .facebook-icon {
+    background: url('../images/facebook.png') no-repeat center;
+    height: 30px;
+    width: 35px;
+    margin-right: 10px;
+  }
+  .instagram-icon {
+    background: url('../images/instagram.png') no-repeat center;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  .github-icon {
+    background: url('../images/github.png') no-repeat center;
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+  }
+  .social-links-desktop {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    margin-left: 15px;
+  }
+}
