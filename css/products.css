@@ -67,4 +67,10 @@
   .products-container .close-btn {
     display: none;
   }
+  .sort-filter {
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-right: 1%;
+  }
+  
 }
