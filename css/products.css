@@ -32,7 +32,7 @@
   background-color: #ececec;
   margin: 5px;
 }
-.item #itemPicture {
+.item .itemPicture {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   height: 309px;
