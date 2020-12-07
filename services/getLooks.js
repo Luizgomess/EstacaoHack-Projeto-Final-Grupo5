@@ -26,14 +26,14 @@ getLooks(2);
 function displayLooks(object) {
 	let container = document.getElementById('container-looks');
 	container.innerHTML += `
-        <div class="card-container">
-            <img src="${object.image}" class="look" alt="${object.alt}">
-            <div class="card-mask">
-                <a href="#" class="button-lookBuy">buy this look</a>
-            </div>
+        <div class="card-container" style="background-image: url('${object.image}')">
+					<div class="card-mask">
+						<a href="#" class="button-lookBuy">buy this look</a>
+					</div>
         </div>
-    `;
+				`;
 }
 
+					// <img src="${object.image}" class="look" alt="${object.alt}">
 
 

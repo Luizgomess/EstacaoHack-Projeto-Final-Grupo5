@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
 
 /* * {
     margin: 0;
@@ -13,51 +13,79 @@ body {
 } */
 
 .container-looks {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 100px;
+  width: 85%;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 75px;
 }
 
 .card-container {
-    display: flex;
-    align-items: center;
-    margin: 10px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 85vh !important;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card-mask {
-    width: 300px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    display: none;
-    text-align: center;
+  width: 100%;
+  height: 85vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  display: none;
+  text-align: center;
 }
 
 .card-mask .button-lookBuy {
-    position: relative;
-    top: 400px;
-    background-color: #E3C5C1;
-    color: #808080;
-    text-decoration: none;
-    padding: 10px 30px;
-    border-radius: 35px;
-    border: 2px solid #704C2C;
-    color: #704C2C;
-    font-family: 'Dancing Script', cursive;
-    font-size: 2.0em;
-}
-
-.look{
-    width: 300px;
-    height: 500px;
+  position: relative;
+  top: 650px;
+  background-color: #e3c5c1;
+  color: #808080;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 35px;
+  border: 2px solid #704c2c;
+  color: #704c2c;
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
 }
 
 .card-container:hover .card-mask {
-    display: block;
+  display: block;
 }
 
+/* .look {
+  width: auto;
+  height: 738px;
+}
 
+.slick-list {
+  height: 100% !important;
+} */
 
+@media (min-width: 1024px) {
 
+  .container-looks {
+    width: 90% !important;
+    margin: 0 auto;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-container {
+    width: 530px;
+    height: 738px !important;
+  }
+
+  .card-mask {
+    width: 530px;
+    height: 738px;
+  }
+
+}

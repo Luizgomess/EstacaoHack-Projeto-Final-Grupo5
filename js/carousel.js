@@ -1,9 +1,9 @@
 jQuery(document).ready(function($){
     function start_slick(){
       $('.container-carousel').slick({
-        dots: true,
+        dots: false,
         infinite: false,
-        speed: 300,
+        speed: 200,
         slidesToShow: 4,
         slidesToScroll: 4,
         responsive: [
@@ -13,7 +13,7 @@ jQuery(document).ready(function($){
               slidesToShow: 3,
               slidesToScroll: 3,
               infinite: true,
-              dots: true
+              dots: false
             }
           },
           {
@@ -35,4 +35,3 @@ jQuery(document).ready(function($){
     }
     window.setTimeout( start_slick, 2000 );
   });
-      
