@@ -33,7 +33,8 @@ getProducts();
 
 function displayProducts(object) {
 	let container = document.getElementById('container-products');
-	console.log(checkImage(object.image));
+	// console.log(checkImage(object.image));
+	checkImage(object.image);
 	container.innerHTML += `
     <div class="item">
       <img class="itemPicture" src="${object.image}">
@@ -45,28 +46,15 @@ function displayProducts(object) {
 
 function checkImage(url) {
 	fetch(url, {
-		mode: 'no-cors',
-		origin: url
+		mode: 'cors',
 	})
-		.then(response => {
-			return response.status;
+		.then((request, response) => {
+			console.log(request);
+			console.log(response);
 		})
 		.catch((error) => {
 			console.log(error)
 		})
-
-	// var request = new XMLHttpRequest();
-	// request.open("GET", url, true);
-	// request.send();
-	// request.onload = function () {
-	// 	status = request.status;
-	// 	if (request.status == 200) //if(statusText == OK)
-	// 	{
-	// 		console.log("image exists");
-	// 	} else {
-	// 		console.log("image doesn't exist");
-	// 	}
-	// }
 }
 
 
