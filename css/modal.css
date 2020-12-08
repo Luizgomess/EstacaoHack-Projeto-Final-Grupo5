@@ -313,7 +313,8 @@ li a:hover {
 .modal-content .team-content {
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   align-content: center;
   justify-content: center;
 }
@@ -325,19 +326,21 @@ ul .team-content {
   list-style: none;
 }
 .member-info {
-  margin-top: 1.5em;
+  margin-top: 1em;
+  padding: 0 0.5em;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
 }
+
 .member-info a {
   text-decoration: none;
 }
 .member-photo img {
   width: 8em;
-  border-radius: 90px;
+  border-radius: 70px;
 }
 .modal-content p.member-name {
   margin: 0;
@@ -442,6 +445,7 @@ ul .team-content {
   }
   .member-info {
     margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

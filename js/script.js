@@ -36,6 +36,7 @@ for (const link of newsletterLinks) {
     OpenModal('newsletter-modal', 'flex');
   })
 }
+<<<<<<< HEAD
 
 let aboutLinks = document.querySelectorAll('.about-link');
 for (const link of aboutLinks) {
@@ -44,6 +45,8 @@ for (const link of aboutLinks) {
     OpenModal('about-modal', 'flex');
   })
 }
+=======
+>>>>>>> e5232101f945a6911945144c3c80ef9cfd56a50c
 
 document.querySelectorAll('.menu-btn')[0].addEventListener('click', function () {
   CloseAllModal();
