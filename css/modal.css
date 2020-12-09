@@ -25,7 +25,7 @@
 .modal-container {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: var(--white);
 }
 
@@ -53,6 +53,7 @@
   margin-top: 20px;
   margin-right: 20px;
 }
+
 .menu-btn:hover {
   cursor: pointer;
 }
@@ -194,6 +195,7 @@
 .newsletter-checkbox {
   width: 90px;
   text-align: left;
+  margin-left: 30px;
 }
 
 .newsletter-checkbox .checkmark {
@@ -206,7 +208,7 @@
   display: none;
 }
 
-.input-group input:checked ~ .checkmark:after {
+.input-group input:checked~.checkmark:after {
   display: block;
 }
 
@@ -292,9 +294,11 @@
   margin-left: 60px;
   padding-top: 100px;
 }
+
 .nav-mobile ul {
   list-style: none;
 }
+
 .nav-mobile a {
   font-size: 36px;
   font-weight: bold;
@@ -302,12 +306,72 @@
   text-decoration: none;
   margin-bottom: 10px;
 }
+
 .nav-mobile .login-mobile {
   margin-top: 80px;
 }
+
 li a:hover {
   cursor: pointer;
 }
+
+/*About - team members */
+.modal-content .team-content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+h3.our-team {
+  margin: 0.1em auto 0.1em;
+}
+
+ul .team-content {
+  list-style: none;
+}
+
+.member-info {
+  margin-top: 1em;
+  padding: 0 0.5em;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+a li.member-photo img:hover {
+  width: 10em;
+  border-radius: 100px;
+}
+
+.member-info a {
+  text-decoration: none;
+}
+
+.member-photo img {
+  width: 8em;
+  border-radius: 80px;
+  opacity: 40%;
+}
+
+.member-photo img:hover {
+  width: 10em;
+  border-radius: 100px;
+  opacity: 100%;
+}
+
+.modal-content p.member-name {
+  margin: 0;
+}
+
+.member-name {
+  text-align: center;
+}
+
 @media (min-width: 1024px) {
   .container {
     position: absolute;
@@ -376,6 +440,7 @@ li a:hover {
   .newsletter-checkbox {
     width: 90px;
     text-align: left;
+    margin-left: auto;
   }
 
   .newsletter-checkbox .checkmark {
@@ -389,5 +454,40 @@ li a:hover {
   .register-link {
     margin-top: 30px;
     font-size: 18px;
+  }
+
+  /*About - team members */
+  .modal-content .team-content {
+    margin-top: 3em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  ul .team-content {
+    list-style: none;
+  }
+
+  .member-info {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-left: 1em;
+    margin-right: 3em;
+  }
+
+  .member-photo img {
+    width: 8em;
+    border-radius: 90px;
+    opacity: 40%;
+  }
+
+  .modal-content p.member-name {
+    margin: 0;
   }
 }

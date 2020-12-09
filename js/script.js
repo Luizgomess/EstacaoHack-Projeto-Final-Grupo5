@@ -21,15 +21,29 @@ for (const link of registerLinks) {
   })
 }
 
-document.querySelectorAll('.contact-link')[0].addEventListener('click', function () {
-  CloseAllModal();
-  OpenModal('contact-modal', 'flex');
-})
+let contactLinks = document.querySelectorAll('.contact-link');
+for (const link of contactLinks) {
+  link.addEventListener('click', function () {
+    CloseAllModal();
+    OpenModal('contact-modal', 'flex');
+  })
+}
 
-document.querySelectorAll('.newsletter-link')[0].addEventListener('click', function () {
-  CloseAllModal();
-  OpenModal('newsletter-modal', 'flex');
-})
+let newsletterLinks = document.querySelectorAll('.newsletter-link');
+for (const link of newsletterLinks) {
+  link.addEventListener('click', function () {
+    CloseAllModal();
+    OpenModal('newsletter-modal', 'flex');
+  })
+}
+
+let aboutLinks = document.querySelectorAll('.about-link');
+for (const link of aboutLinks) {
+  link.addEventListener('click', function () {
+    CloseAllModal();
+    OpenModal('about-modal', 'flex');
+  })
+}
 
 document.querySelectorAll('.menu-btn')[0].addEventListener('click', function () {
   CloseAllModal();
@@ -37,17 +51,16 @@ document.querySelectorAll('.menu-btn')[0].addEventListener('click', function () 
 })
 
 function OpenModal(modalId, displayValue) {
+  console.log(modalId + displayValue);
   let modalElement = document.getElementById(modalId);
   modalElement.style.display = displayValue;
 }
 
 function CloseAllModal() {
-  // console.log(document.querySelectorAll('.modal'));
   let modalArray = document.querySelectorAll('.modal');
   for (const modal of modalArray) {
     if (modal.style.display != 'none') {
       modal.style.display = 'none';
     }
   }
-  // document.querySelectorAll('.modal').style.display = 'none';
 }

@@ -34,5 +34,6 @@ function displayLooks(object) {
     `;
 }
 
+					// <img src="${object.image}" class="look" alt="${object.alt}">
 
 
