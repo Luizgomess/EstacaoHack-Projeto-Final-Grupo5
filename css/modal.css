@@ -53,6 +53,7 @@
   margin-top: 20px;
   margin-right: 20px;
 }
+
 .menu-btn:hover {
   cursor: pointer;
 }
@@ -207,7 +208,7 @@
   display: none;
 }
 
-.input-group input:checked ~ .checkmark:after {
+.input-group input:checked~.checkmark:after {
   display: block;
 }
 
@@ -293,9 +294,11 @@
   margin-left: 60px;
   padding-top: 100px;
 }
+
 .nav-mobile ul {
   list-style: none;
 }
+
 .nav-mobile a {
   font-size: 36px;
   font-weight: bold;
@@ -303,12 +306,15 @@
   text-decoration: none;
   margin-bottom: 10px;
 }
+
 .nav-mobile .login-mobile {
   margin-top: 80px;
 }
+
 li a:hover {
   cursor: pointer;
 }
+
 /*About - team members */
 .modal-content .team-content {
   width: 100%;
@@ -322,9 +328,11 @@ li a:hover {
 h3.our-team {
   margin: 0.1em auto 0.1em;
 }
+
 ul .team-content {
   list-style: none;
 }
+
 .member-info {
   margin-top: 1em;
   padding: 0 0.5em;
@@ -335,19 +343,35 @@ ul .team-content {
   justify-content: center;
 }
 
+a li.member-photo img:hover {
+  width: 10em;
+  border-radius: 100px;
+}
+
 .member-info a {
   text-decoration: none;
 }
+
 .member-photo img {
   width: 8em;
-  border-radius: 70px;
+  border-radius: 80px;
+  opacity: 40%;
 }
+
+.member-photo img:hover {
+  width: 10em;
+  border-radius: 100px;
+  opacity: 100%;
+}
+
 .modal-content p.member-name {
   margin: 0;
 }
+
 .member-name {
   text-align: center;
 }
+
 @media (min-width: 1024px) {
   .container {
     position: absolute;
@@ -440,9 +464,11 @@ ul .team-content {
     flex-direction: row;
     justify-content: space-around;
   }
+
   ul .team-content {
     list-style: none;
   }
+
   .member-info {
     margin: 0;
     padding: 0;
@@ -454,10 +480,13 @@ ul .team-content {
     margin-left: 1em;
     margin-right: 3em;
   }
+
   .member-photo img {
     width: 8em;
     border-radius: 90px;
+    opacity: 40%;
   }
+
   .modal-content p.member-name {
     margin: 0;
   }
