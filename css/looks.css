@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    max-width: 100%;
+    min-height: 100vh;
+} */
+
+.container-looks {
+  width: 85%;
+  height: 100%;
+  margin: 60px auto 0 auto;
+  /* margin: 0 auto; */
+  /* padding-top: 75px; */
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 85vh !important;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-mask {
+  width: 100%;
+  height: 85vh;
+  background-color: rgba(0, 0, 0, 0.2);
+ 
+  display: none;
+  text-align: center;
+}
+
+.card-mask .button-lookBuy {
+  position: relative;
+  top: 400px;
+  background-color: #e3c5c1;
+  color: #808080;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 35px;
+  border: 2px solid #704c2c;
+  color: #704c2c;
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
+}
+
+.card-container:hover .card-mask {
+  display: block;
+}
+
+/* .look {
+  width: auto;
+  height: 738px;
+}
+
+.slick-list {
+  height: 100% !important;
+} */
+
+@media (min-width: 1024px) {
+
+  .container-looks {
+    width: 90% !important;
+    margin: 0 auto;
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-container {
+    width: 530px;
+    height: 738px !important;
+  }
+
+  .card-mask {
+    width: 530px;
+    height: 738px;
+  }
+
+  
+
+}
