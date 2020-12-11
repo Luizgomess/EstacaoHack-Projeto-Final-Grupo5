@@ -10,16 +10,11 @@
   --font-lato: 'Lato', sans-serif;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .container {
-  position: absolute;
+  position: fixed;
   top: 0;
-  display: none;
+  left: 400px;
+  display: block;
 }
 
 .modal-container {
@@ -145,23 +140,18 @@
   border: 3px solid var(--dark-brown);
   border-radius: 25px;
   margin-bottom: 20px;
-}
-
-.modal-content form textarea::placeholder {
   padding-left: 15px;
   padding-top: 15px;
 }
 
 .input-options {
-  margin: 10px auto 0 auto;
-  padding-left: 20px;
-  width: 70%;
+  margin: 10px auto 10px auto;
+  padding-left: 22px;
   height: auto !important;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 5rem;
 }
 
 .input-group {
@@ -190,6 +180,21 @@
 
 .login-checkbox .checkmark {
   left: 80px;
+}
+
+#catchText p {
+  font-size: 18px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.newsletter-img {
+  width: auto;
+  height: 120px ;
+}
+
+.newsletter-form {
+  margin-top: 30px !important;
 }
 
 .newsletter-checkbox {
@@ -368,18 +373,39 @@ a li.member-photo img:hover {
   margin: 0;
 }
 
+.show__menu {
+  -webkit-transition: 2s;
+  -moz-transition: 2s;
+  -ms-transition: 2s;
+  -o-transition: 2s;
+  transition: 2s;
+  left: 0 !important;
+}
+
+.hide__menu {
+  -webkit-transition: 1.5s;
+  -moz-transition: 1.5s;
+  -ms-transition: 1.5s;
+  -o-transition: 1.5s;
+  transition: 1.5s;
+  left: 400px !important;
+}
+
 .member-name {
   text-align: center;
 }
 
 @media (min-width: 1024px) {
+
   .container {
-    position: absolute;
+    position: fixed;
     top: 0;
-    display: none;
+    left: 0 !important;
+    transform: translateX(2000px);
+    display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0);
     height: 100vh;
     width: 100vw;
   }
@@ -454,6 +480,7 @@ a li.member-photo img:hover {
   .register-link {
     margin-top: 30px;
     font-size: 18px;
+    cursor: pointer;
   }
 
   /*About - team members */

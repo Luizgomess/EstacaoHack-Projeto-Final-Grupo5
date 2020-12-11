@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!-- <link rel="stylesheet" href="./css/home.css" /> -->
+	<link rel="stylesheet" href="./css/home.css" />
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/modal.css" />
 	<link rel="stylesheet" href="css/looks.css" />
@@ -28,14 +28,15 @@
 			<li><a class="home-link" href="index.html">Home</a></li>
 			<li><a class="looks-link" href="looks.html">Looks</a></li>
 			<li><a class="products-link" href="products.html">Products</a></li>
-			<li><a class="login-link">Login</a></li>
-			<li><a class="contact-link">Contact</a></li>
-			<li><a class="newsletter-link">Newsletter</a></li>
+			<li><a class="login-link" onclick="OpenModal('login-modal')">Login</a></li>
+			<li><a class="contact-link" onclick="OpenModal('contact-modal')">Contact</a></li>
+			<li><a class="newsletter-link" onclick="OpenModal('newsletter-modal')">Newsletter</a></li>
+			<li><a class="about-link" onclick="OpenModal('about-modal')">About</a></li>
 		</ul>
 	</nav>
 
 	<section class="looks">
-		<div class="menu-btn"></div>
+		<div class="menu-btn" onclick="OpenModalMobile('menu-modal')"></div>
 		<div class="container-looks" id="container-looks">
 
 		</div>
@@ -57,10 +58,11 @@
 					<li><a class="looks-link" href="looks.html">Looks</a></li>
 					<li><a class="products-link" href="products.html">Products</a></li>
 					<li class="login-mobile">
-						<a class="login-link">Login / Register</a>
+						<a class="login-link" onclick="OpenModalMobile('login-modal')">Login / Register</a>
 					</li>
-					<li><a class="contact-link">Contact</a></li>
-					<li><a class="newsletter-link">Newsletter</a></li>
+					<li><a class="contact-link" onclick="OpenModalMobile('contact-modal')">Contact</a></li>
+					<li><a class="newsletter-link" onclick="OpenModalMobile('newsletter-modal')">Newsletter</a></li>
+					<li><a class="about-link" onclick="OpenModalMobile('about-modal')">About</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -72,8 +74,8 @@
 		<div class="modal-container">
 			<div class="close-btn"></div>
 			<div class="modal-content">
-				<h3>Log in</h3>
-				<form action="#">
+				<h3 class="seq">Log in</h3>
+				<form action="#" class="seq">
 					<div class="input-outer">
 						<div class="email-icon input-icon"></div>
 						<input type="text" name="login-email" id="login-email" placeholder="E-mail" />
@@ -86,12 +88,12 @@
 						<input type="checkbox" checked="checked" />
 						<span class="checkmark"></span>
 					</label>
-					<button class="submit-btn" type="submit">Submit</button>
+					<button class="submit-btn seq" type="submit">Submit</button>
 				</form>
-				<div class="separator"></div>
-				<a class="forgot-link" href="#">Forgot <span>Username / Password?</span></a>
-				<div class="register-link">
-					<a href="#">Create your account</a>
+				<div class="separator seq"></div>
+				<a class="forgot-link seq" href="#">Forgot <span>Username / Password?</span></a>
+				<div class="register-link seq">
+					<a>Create your account</a>
 					<div class="arrow-image"></div>
 				</div>
 			</div>
@@ -99,13 +101,14 @@
 	</div>
 	<!--END of Login Modal -->
 
+
 	<!-- Register Modal -->
 	<div class="container modal" id="register-modal">
 		<div class="modal-container">
 			<div class="close-btn"></div>
 			<div class="modal-content">
-				<h3>Register</h3>
-				<form id="register-form" action="" method="post">
+				<h3 class="seq">Register</h3>
+				<form id="register-form" class="seq" action="" method="post">
 					<!-- user name -->
 					<div class="input-outer">
 						<img class="input-icon" src="images/user-icon.png" />
@@ -132,20 +135,21 @@
 						<span class="checkmark"></span>
 					</label> -->
 					<!-- register button  -->
-					<button class="submit-btn" type="submit">Submit</button>
+					<button class="submit-btn seq" type="submit">Submit</button>
 				</form>
 			</div>
 		</div>
 	</div>
 	<!--END of Register Modal -->
 
+
 	<!-- Contact Modal -->
 	<div class="container modal" id="contact-modal">
 		<div class="modal-container">
 			<div class="close-btn"></div>
 			<div class="modal-content">
-				<h3>Contact Us</h3>
-				<form action="#">
+				<h3 class="seq">Contact Us</h3>
+				<form action="#" class="seq">
 					<div class="input-outer">
 						<div class="user-icon input-icon"></div>
 						<input type="text" name="user" id="user" placeholder="Full Name" />
@@ -154,8 +158,8 @@
 						<div class="email-icon input-icon"></div>
 						<input type="email" name="contact-email" id="contact-email" placeholder="E-mail" />
 					</div>
-					<textarea id="comment" class="comment" placeholder="Message" maxlength="10000"></textarea>
-					<button class="submit-btn" type="submit">Submit</button>
+					<textarea id="comment" class="comment seq" placeholder="Message" maxlength="10000"></textarea>
+					<button class="submit-btn seq" type="submit">Submit</button>
 				</form>
 			</div>
 		</div>
@@ -167,10 +171,8 @@
 		<div class="modal-container newsletter-modal">
 			<div class="close-btn"></div>
 			<div class="modal-content">
-				<main>
-					<img src="./images/newsletter.svg" alt="Newsletter Image" />
-				</main>
-				<form action="#">
+				<img class="newsletter-img seq" src="./images/newsletter.svg" alt="Newsletter Image" />
+				<form class="newsletter-form seq" action="#">
 					<div class="input-outer align-center">
 						<div class="user-icon input-icon"></div>
 						<input type="text" name="fullname" id="fullname" placeholder="Full Name" />
@@ -180,11 +182,11 @@
 						<input type="email" name="Email" id="email" placeholder="E-mail" />
 					</div>
 					<section id="catchText">
-						<h4>You First</h4>
-						<p>Sign up to get the best deals before anyone else</p>
+						<h4 class="seq">You First</h4>
+						<p class="seq">Sign up to get the best deals before anyone else</p>
 					</section>
 
-					<div class="input-options">
+					<div class="input-options seq">
 						<label class="input-group newsletter-checkbox" for="clothes">
 							<input type="checkbox" name="clothes" id="clothes" value="clothes" /><span
 								class="checkmark"></span>Clothes</label>
@@ -210,12 +212,103 @@
 								class="checkmark"></span>Sales</label>
 					</div>
 
-					<button class="submit-btn" type="submit">Submit</button>
+					<button class="submit-btn seq" type="submit">Submit</button>
 				</form>
 			</div>
 		</div>
 	</div>
 	<!--END of Newsletter Modal -->
+
+	<!-- About Modal -->
+	<div class="container modal" id="about-modal">
+		<div class="modal-container">
+			<div class="close-btn seq"></div>
+			<div class="modal-content team-modal-content">
+				<h3 class="our-team seq">Our team</h3>
+				<ul>
+					<div class="team-content">
+						<div class="member-info seq">
+							<a href="https://www.linkedin.com/in/gabriel-fuli-valcarce-b8100115b/">
+								<li class="member-photo">
+									<img
+										src="https://media-exp1.licdn.com/dms/image/C4D03AQEtEpRHvbgwSA/profile-displayphoto-shrink_200_200/0/1569936044413?e=1613001600&v=beta&t=GgbdOGwosL4Um2rzbTRO66l-OlVfwtOyA2hhw8bCCNQ"
+										alt="Gabriel Fuli" />
+								</li>
+								<p class="member-name">Gabriel</p>
+							</a>
+						</div>
+						<div class="member-info seq">
+							<a href="https://www.linkedin.com/in/jonataspcaraujo/">
+								<li class="member-photo">
+									<img
+										src="https://media-exp1.licdn.com/dms/image/C4E03AQGq5JpxQwAHWw/profile-displayphoto-shrink_200_200/0/1600182929534?e=1613001600&v=beta&t=4kLE-1dKgTHEppjd-LsJerCWV8lBAnZsoznMmVzmH1I"
+										alt="Jônatas" />
+								</li>
+								<p class="member-name">Jônatas</p>
+							</a>
+						</div>
+						<div class="member-info seq">
+							<a href="https://www.linkedin.com/in/klaus-galm-422a75105/">
+								<li class="member-photo">
+									<img
+										src="https://media-exp1.licdn.com/dms/image/C4D03AQHMIe_v1bm8NA/profile-displayphoto-shrink_200_200/0/1591589023292?e=1613001600&v=beta&t=8kbWSvI6Lw3eWglgcQvUBfOFAWsmrrwSl9NrOndpQXg"
+										alt="Klaus Galm" />
+								</li>
+								<p class="member-name">Klaus</p>
+							</a>
+						</div>
+						<div class="member-info seq">
+							<a href="https://www.linkedin.com/in/luiz-gomes1/">
+								<li class="member-photo">
+									<img
+										src="https://media-exp1.licdn.com/dms/image/C4D03AQEmvQm92NwnyA/profile-displayphoto-shrink_200_200/0?e=1613001600&v=beta&t=1jWgT1IAoPHHrD0INFssbmK3ZeMMSgEmGCPPSnU-JOE"
+										alt="Luiz Gomes" />
+								</li>
+								<p class="member-name">Luiz</p>
+							</a>
+						</div>
+					</div>
+				</ul>
+
+				<ul>
+					<div class="team-content">
+						<div class="member-info seq">
+							<a href="https://www.linkedin.com/in/nara-guimar%C3%A3es-94551029/">
+								<li class="member-photo">
+									<img
+										src="https://media-exp1.licdn.com/dms/image/C4E03AQFKx66nrAdLaA/profile-displayphoto-shrink_200_200/0/1536245510487?e=1613001600&v=beta&t=K6mk0zuEANuAKtfTJh3yEAOZzaEbXFbE-jQV7wNaiq4"
+										alt="Nara Guimarães" />
+								</li>
+								<p class="member-name">Nara</p>
+							</a>
+						</div>
+						<div class="member-info seq">
+							<a href="https://www.linkedin.com/in/rafael-ribs/">
+								<li class="member-photo">
+									<img
+										src="https://media-exp1.licdn.com/dms/image/C4E03AQGHD8SgRZPEVw/profile-displayphoto-shrink_800_800/0/1516870205869?e=1613001600&v=beta&t=SG7PKj6mhEiGKryCVuQE1lBFdRny_Y5ytOZDd6m6isM"
+										alt="Rafael Ribeiro" />
+								</li>
+								<p class="member-name">Rafael</p>
+							</a>
+						</div>
+						<div class="member-info seq">
+							<a href="https://www.linkedin.com/in/tsantosfigueira/">
+								<li class="member-photo">
+									<img
+										src="https://media-exp1.licdn.com/dms/image/C5603AQGm2qVCJbj4iA/profile-displayphoto-shrink_200_200/0/1516837896035?e=1613001600&v=beta&t=QeA9mAMtWN1SttvyhNHf55fZRZlNLs0aXr5aquBooHQ"
+										alt="Thiago Figueira" />
+								</li>
+								<p class="member-name">Thiago</p>
+							</a>
+						</div>
+					</div>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--END of About Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
 	<script src="./js/script.js"></script>
 	<script src="./services/getLooks.js"></script>
 
