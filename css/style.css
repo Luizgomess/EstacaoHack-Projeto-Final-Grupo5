@@ -29,6 +29,26 @@ body {
   background: url("../images/instagram.png") no-repeat center;
 }
 
+/* loaded */
+.loader {
+  border: 8px solid lightgray;
+  border-top: 8px solid #e2a89c; 
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  top: 30%;
+  position: absolute; /* para nao quebrar o layout quando esse elemento for escondido */
+  align-items: center;
+  justify-content: center;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 @media (min-width: 1024px) {
   .menu-btn {
     display: none;
@@ -104,5 +124,24 @@ body {
     height: 1.5px;
     background: #6d421c;
     margin-top: -2px;
+  }
+
+  /* loaded */
+  .loader {
+    border: 8px solid lightgray; 
+    border-top: 8px solid #e2a89c; 
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    position: absolute; /* para nao quebrar o layout quando esse elemento for escondido */
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
   }
 }
