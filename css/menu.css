@@ -1,20 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Lato:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 .nav-desktop {
   display: none;
 }
+
 .footer-desktop {
   display: none;
 }
-.container {
-  background-color: #fafafa;
-  width: 100vw;
-  height: 100vh;
-}
+
 .close-icon {
   background: url('/img/fechar.png') no-repeat center;
   width: 20px;
@@ -24,24 +23,9 @@
   position: fixed;
   right: 0;
 }
-.nav-mobile {
-  font-family: 'Dancing Script', cursive;
-  margin-left: 60px;
-  padding-top: 100px;
-}
-.nav-mobile ul {
-  list-style: none;
-}
-.nav-mobile a {
-  font-size: 36px;
-  font-weight: bold;
-  color: #6d421c;
-  text-decoration: none;
-  margin-bottom: 10px;
-}
-.nav-mobile .login-mobile {
-  margin-top: 80px;
-}
+
+
+
 .footer-mobile {
   font-family: 'Dancing Script', cursive;
   padding: 0 20px 20px 20px;
@@ -52,40 +36,48 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .footer-mobile a {
   text-decoration: none;
   color: #6d421c;
   font-size: 32px;
   font-weight: bold;
 }
-.social-links-mobile {
+
+.footer-mobile .social-links-mobile {
   height: 30px;
   display: flex;
 }
-.social-links-mobile a {
+
+.footer-mobile .social-links-mobile a {
   margin-left: 15px;
 }
-.twitter-icon {
+
+.footer-mobile .twitter-icon {
   background: url('/img/twitter.png') no-repeat center;
 }
-.facebook-icon {
+
+.footer-mobile .facebook-icon {
   background: url('/img/facebook.png') no-repeat center;
 }
-.instagram-icon {
+
+.footer-mobile .instagram-icon {
   background: url('/img/instagram.png') no-repeat center;
 }
-.social-links-mobile div {
+
+.footer-mobile .social-links-mobile div {
   width: 35px;
   height: 30px;
 }
-li:hover {
-  cursor: pointer;
-}
+
+
+
 /*Desktop Version*/
 @media (min-width: 1024px) {
   .nav-mobile {
     display: none;
   }
+
   .footer-mobile {
     display: none;
   }
@@ -93,29 +85,35 @@ li:hover {
   .footer-desktop {
     display: block;
   }
+
   .close-icon {
     display: none;
   }
+
   .container {
     background-color: #ecd5b6;
     width: 100vw;
     height: 100vh;
   }
+
   .nav-desktop {
     font-family: 'Dancing Script', cursive;
     display: flex;
     justify-content: space-between;
   }
+
   .nav-desktop ul {
     list-style: none;
     float: right;
     margin-top: 25px;
     margin-right: 25px;
   }
+
   .nav-desktop li {
     display: inline;
     padding: 15px;
   }
+
   .nav-desktop a {
     font-size: 34px;
     font-weight: bold;
@@ -123,30 +121,35 @@ li:hover {
     text-decoration: none;
     margin-bottom: 10px;
   }
+
   .twitter-icon {
     background: url('/img/twitter.png') no-repeat center;
     height: 30px;
     width: 30px;
     margin-right: 10px;
   }
+
   .facebook-icon {
     background: url('/img/facebook.png') no-repeat center;
     height: 30px;
     width: 35px;
     margin-right: 10px;
   }
+
   .instagram-icon {
     background: url('/img/instagram.png') no-repeat center;
     height: 30px;
     width: 30px;
     margin-right: 10px;
   }
+
   .github-icon {
     background: url('/img/github.png') no-repeat center;
     height: 30px;
     width: 30px;
     text-decoration: none;
   }
+
   .social-links-desktop {
     width: 300px;
     height: 30px;
@@ -155,17 +158,21 @@ li:hover {
     margin-top: 30px;
     margin-left: 30px;
   }
+
   .footer-desktop {
     font-family: 'Lato', sans-serif;
     margin-left: 25px;
     margin-bottom: 25px;
   }
+
   .footer-desktop a {
     text-decoration: none;
     color: #6d421c;
   }
+
   .footer-icons {
     display: flex;
+    flex-direction: row;
     align-items: center;
     text-decoration: none;
   }

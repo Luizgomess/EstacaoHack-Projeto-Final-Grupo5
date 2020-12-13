@@ -185,16 +185,16 @@
 #catchText p {
   font-size: 18px;
   text-align: center;
-  margin: 5px 0;
+  margin: 1px 0;
 }
 
 .newsletter-img {
   width: auto;
-  height: 120px ;
+  height: 120px;
 }
 
 .newsletter-form {
-  margin-top: 30px !important;
+  margin-top: 20px !important;
 }
 
 .newsletter-checkbox {
@@ -320,6 +320,78 @@ li a:hover {
   cursor: pointer;
 }
 
+.close-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url('../images/close-btn.png') no-repeat center;
+  width: 20px;
+  height: 20px;
+  margin: 20px 20px 0 0;
+}
+
+.footer-mobile {
+  font-family: 'Dancing Script', cursive;
+  padding: 0 20px 20px 20px;
+  position: absolute;
+  bottom: 0;
+  width: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.footer-mobile a {
+  text-decoration: none;
+  color: #6d421c;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.footer-mobile .social-links-mobile {
+  height: 30px;
+  display: flex;
+}
+
+.footer-mobile .social-links-mobile a {
+  align-items: flex-start;
+}
+
+.footer-mobile .twitter-icon {
+  background: url('../images/twitter.png') no-repeat center;
+  height: 30px;
+  width: 30px;
+  margin-left: 5em;
+  text-decoration: none;
+}
+
+.footer-mobile .facebook-icon {
+  background: url('../images/facebook.png') no-repeat center;
+  height: 30px;
+  width: 30px;
+  text-decoration: none;
+}
+
+.footer-mobile .instagram-icon {
+  background: url('../images/instagram.png') no-repeat center;
+  height: 30px;
+  width: 30px;
+  text-decoration: none;
+}
+
+.footer-mobile .github-icon {
+  background: url('../images/github-icon.PNG') no-repeat center;
+  height: 30px;
+  width: 30px;
+  text-decoration: none;
+}
+
+.footer-mobile .social-links-mobile div {
+  width: 35px;
+  height: 30px;
+}
+
 /*About - team members */
 .modal-content .team-content {
   width: 100%;
@@ -331,40 +403,42 @@ li a:hover {
 }
 
 h3.our-team {
-  margin: 0.1em auto 0.1em;
+  margin-bottom: 3.5em;
 }
 
 ul .team-content {
   list-style: none;
+  margin: 0;
 }
 
 .member-info {
-  margin-top: 1em;
-  padding: 0 0.5em;
+  margin-top: 0.2em;
+  padding: 0;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: center;
-  justify-content: center;
+  align-content: flex-start;
+  justify-content: flex-start;
+
 }
 
-a li.member-photo img:hover {
-  width: 10em;
-  border-radius: 100px;
+.team-modal-content {
+  max-width: 375px;
+  max-height: 100vh;
 }
 
 .member-info a {
   text-decoration: none;
 }
 
-.member-photo img {
-  width: 8em;
+.members {
+  width: 7em;
   border-radius: 80px;
   opacity: 40%;
 }
 
-.member-photo img:hover {
-  width: 10em;
+.members:hover {
+  width: 9em;
   border-radius: 100px;
   opacity: 100%;
 }
@@ -394,6 +468,18 @@ a li.member-photo img:hover {
 .member-name {
   text-align: center;
 }
+
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 0;
+}
+
+.footer-desktop {
+  display: none;
+}
+
+
 
 @media (min-width: 1024px) {
 
@@ -446,7 +532,7 @@ a li.member-photo img:hover {
   }
 
   .newsletter-modal {
-    max-height: 700px;
+    max-height: 600px;
   }
 
   .input-options {
@@ -492,9 +578,15 @@ a li.member-photo img:hover {
     justify-content: space-around;
   }
 
+  h3.our-team {
+    margin: 0.1em auto 0.1em;
+
+  }
+
   ul .team-content {
     list-style: none;
   }
+
 
   .member-info {
     margin: 0;
@@ -506,15 +598,58 @@ a li.member-photo img:hover {
     justify-content: center;
     margin-left: 1em;
     margin-right: 3em;
+    width: 130px;
+    height: 150px
+  }
+
+  .team-modal-content {
+    max-width: 100%;
   }
 
   .member-photo img {
-    width: 8em;
+    width: 6em;
     border-radius: 90px;
     opacity: 40%;
   }
 
   .modal-content p.member-name {
     margin: 0;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .footer-mobile {
+    display: none;
+  }
+
+  .footer-desktop {
+    margin-top: -80px;
+    margin-left: 1em;
+    display: block;
+    font-family: 'Lato', sans-serif;
+    margin-left: 25px;
+    position: fixed;
+  }
+
+  .github-icon {
+    background: url('../images/github-icon.PNG') no-repeat center;
+    height: 30px;
+    width: 30px;
+    text-decoration: none;
+  }
+
+  .footer-desktop a {
+    text-decoration: none;
+    color: #6d421c;
+    padding-left: 0.5em;
+
+  }
+
+  .footer-icons {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
   }
 }
