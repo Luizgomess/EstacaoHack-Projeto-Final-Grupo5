@@ -434,7 +434,7 @@ ul .team-content {
 .members {
   width: 7em;
   border-radius: 80px;
-  opacity: 40%;
+  opacity: 100%;
 }
 
 .members:hover {
