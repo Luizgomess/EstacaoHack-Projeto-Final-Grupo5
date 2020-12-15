@@ -127,7 +127,7 @@
         <div class="close-btn"></div>
         <div class="modal-content">
           <h3 class="seq">Log in</h3>
-          <form action="#" class="seq">
+          <form id="login-form" class="seq">
             <div class="input-outer">
               <div class="email-icon input-icon"></div>
               <input
@@ -172,16 +172,26 @@
         <div class="close-btn"></div>
         <div class="modal-content">
           <h3 class="seq">Register</h3>
-          <form id="register-form" class="seq" action="" method="post">
+          <form id="register-form" class="seq">
             <!-- user name -->
             <div class="input-outer">
               <img class="input-icon" src="images/user-icon.png" />
-              <input class="input-field" type="text" placeholder="Full Name" />
+              <input
+                class="input-field"
+                type="text"
+                id="name"
+                placeholder="Full Name"
+              />
             </div>
             <!-- user email-->
             <div class="input-outer">
               <img class="input-icon" src="images/email-icon.png" />
-              <input class="input-field" type="email" placeholder="Email" />
+              <input
+                class="input-field"
+                type="email"
+                id="email"
+                placeholder="Email"
+              />
             </div>
             <!-- user password -->
             <div class="input-outer">
@@ -189,6 +199,7 @@
               <input
                 class="input-field"
                 type="password"
+                id="password-register"
                 placeholder="Password"
               />
             </div>
@@ -197,6 +208,7 @@
               <img class="input-icon" src="images/password-icon.png" />
               <input
                 class="input-field"
+                id="password-confirm"
                 type="password"
                 placeholder="Confirm Password"
               />
@@ -220,7 +232,13 @@
         <div class="close-btn"></div>
         <div class="modal-content">
           <h3 class="seq">Contact Us</h3>
-          <form action="#" class="seq">
+          <form
+            name="newsletter"
+            method="POST"
+            action="index.html"
+            data-netlify="true"
+            class="seq"
+          >
             <div class="input-outer">
               <div class="user-icon input-icon"></div>
               <input
@@ -262,7 +280,13 @@
             src="./images/newsletter.svg"
             alt="Newsletter Image"
           />
-          <form class="newsletter-form seq" action="#">
+          <form
+            class="newsletter-form seq"
+            name="newsletter"
+            method="POST"
+            action="index.html"
+            data-netlify="true"
+          >
             <div class="input-outer align-center">
               <div class="user-icon input-icon"></div>
               <input
@@ -485,5 +509,22 @@
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/api.js"></script>
+    <script>
+      window.watsonAssistantChatOptions = {
+        integrationID: '1d95fafe-e4ef-4081-8fd0-92891b877dcf', // The ID of this integration.
+        region: 'us-south', // The region your integration is hosted in.
+        serviceInstanceID: '5eba0145-2d4b-41b1-bbcb-d5451da20953', // The ID of your service instance.
+        onLoad: function (instance) {
+          instance.render();
+        },
+      };
+      setTimeout(function () {
+        const t = document.createElement('script');
+        t.src =
+          'https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js';
+        document.head.appendChild(t);
+      });
+    </script>
   </body>
 </html>
