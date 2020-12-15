@@ -7,8 +7,22 @@ body {
 .nav-desktop {
   display: none;
 }
+
 .footer-desktop {
   display: none;
+}
+
+.current-page:after {
+  content: "";
+  background: url(../images/separator.png) no-repeat center;
+  background-size: cover;
+  width: 80px;
+  height: 15px;
+  display: inline-block;
+  position: absolute;
+  top: 45px;
+  margin-left: -85px;
+  transform: translateY(50%) translateX(20%);
 }
 
 .social-links-mobile {
@@ -29,6 +43,30 @@ body {
   background: url("../images/instagram.png") no-repeat center;
 }
 
+/* loaded */
+.loader {
+  border: 8px solid lightgray;
+  border-top: 8px solid #e2a89c;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  top: 30%;
+  position: absolute; /* para nao quebrar o layout quando esse elemento for escondido */
+  align-items: center;
+  justify-content: center;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 @media (min-width: 1024px) {
   .menu-btn {
     display: none;
@@ -37,11 +75,16 @@ body {
   .nav-desktop {
     position: fixed;
     top: 0;
-    height: 100px;
+    height: 80px;
     width: 100%;
     display: flex;
     font-family: "Dancing Script", cursive;
     justify-content: space-between;
+    z-index: 3;
+  }
+
+  .bg-white {
+    background-color: #fafafa;
   }
 
   .nav-desktop ul {
@@ -49,6 +92,7 @@ body {
     float: right;
     margin-top: 15px;
     margin-right: 15px;
+    height: 100%;
   }
 
   .nav-desktop li {
@@ -62,6 +106,20 @@ body {
     color: #6d421c;
     text-decoration: none;
     margin-bottom: 10px;
+    height: 100%;
+  }
+
+  .nav-desktop li:hover:after {
+    content: "";
+    background: url(../images/separator.png) no-repeat center;
+    background-size: cover;
+    width: 80px;
+    height: 15px;
+    display: inline-block;
+    position: absolute;
+    top: 45px;
+    margin-left: -85px;
+    transform: translateY(50%) translateX(20%);
   }
 
   .twitter-icon {
@@ -104,5 +162,28 @@ body {
     height: 1.5px;
     background: #6d421c;
     margin-top: -2px;
+  }
+
+  /* loaded */
+  .loader {
+    border: 8px solid lightgray;
+    border-top: 8px solid #e2a89c;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    position: absolute; /* para nao quebrar o layout quando esse elemento for escondido */
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    animation: spin 2s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
 }

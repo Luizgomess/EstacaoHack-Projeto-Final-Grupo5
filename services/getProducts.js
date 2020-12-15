@@ -1,3 +1,9 @@
+function hideLoader(){
+	let loader = document.querySelector(".loader");
+	loader.style.visibility = "hidden";
+}
+
+
 function getProducts() {
 	fetch(`https://dh-grupo5-beautify-api.herokuapp.com/api/products/`)
 		.then((data) => {
@@ -24,6 +30,8 @@ function displayProducts(object) {
 	let container = document.getElementById('container-products');
 	let image = new Image();
 	image.src = object.image;
+
+	hideLoader();
 
 	image.onload = function () {
 		if (this.width > 0) {
